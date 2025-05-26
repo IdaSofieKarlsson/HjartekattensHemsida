@@ -1,4 +1,16 @@
 body {
-    background-color: whitesmoke;
+    background-color: lightgreen;
 }
-/**/
+/*
+Fonter
+quicksand - p
+outfit - h1, h2, h3, h4
+
+
+*/
+h1, h2, h3, h4, span {
+    font-family: "Outfit", sans-serif;
+}
+p, li {
+    font-family: "Quicksand", sans-serif;
+}

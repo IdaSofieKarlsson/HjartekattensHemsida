@@ -6,6 +6,9 @@
     <title>Hjärtekatten</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,21 +16,30 @@
         <!--gör favicon av beskuren logga-->  
         <nav>
             <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="/pages/sa-har-kan-du-bidra.html">Så här kan du bidra</a></li>
-                <li><a href="/pages/virkmonster-och-instruktioner.html">Virkmönster och instruktioner</a></li>
-                <li><a href="/pages/foto-galleri.html">Hjärtekatter som hittat hem</a></li>
-                <li><a href="/pages/om-oss.html">Om oss</a></li>
-                <li><a href="/pages/kontakt-och-FAQ.html">Kontakt och FAQ</a></li>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Så här kan du bidra</a></li>
+                <li><a href="#">Virkmönster och instruktioner</a></li>
+                <li><a href="#">Hjärtekatter som hittat hem</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Kontakt och FAQ</a></li>
             </ul>
         </nav>
+        <!--smal nav med de tre frågorna: mönster hjärtekatt, info syskondjur, adresser mottagare. 
+        smal remsa, sticky position, följer med när man scrollar-->
+        <nav>
+            <ul>
+                <li><a href="#">Hjärtekattens mönster</a></li>
+                <li><a href="#">Syskondjur</a></li>
+                <li><a href="#">Hit skickar du dina alster</a></li>
+            </ul>
+        </nav> 
     </header>
     <main>
         <div class="container-large-img">
             <div class="antal-insamlade-hjartekatter">
-                <span>6984 insamlade Hjärtekatter!</span> <!--span ligger på bilden, fixed-->
+                <span>7014 insamlade Hjärtekatter!</span> <!--span ligger på bilden, fixed-->
             </div>
-            <img src="#" alt="Blond flicka kramar sin hjärtekatt">
+            <img src="#" alt="Blond flicka kramar sin hjärtekatt"> <!--ändra till bakgrundsbild på div-->
         </div>
         <div class="container-home">
             <div class="container-intro">
@@ -37,18 +49,223 @@
                     hem igen får de med sig en alldeles egen Hjärtekatt. </p>
                 <p class="p-intro">Vill du vara med och hjälpa till? Det är busenkelt! Allt du behöver göra är att virka, skicka figurerna 
                     till oss och vips så har vi tillsammans skänkt lite extra glädje till hjärtebarnen. Toppen, eller hur? </p>
-                <a href="/pages/sa-har-kan-du-bidra.html">Läs mer om hur du gör för att hjälpa</a>
+                <a href="#">Läs mer om hur du gör för att hjälpa</a>
             </div>
             <div class="container-direct-pattern">
                 <img src="#" alt="Hjärtekatts-virknings-projekt" width="300px" height="200px">
                 <div class="banner-link-pattern">
-                    <a href="/pages/virkmonster-och-instruktioner.html">Så här virkas Hjärtekatten</a>
+                    <a href="#">Så här virkas Hjärtekatten</a>
                 </div>
             </div>
         </div>
+        <div class="container-bidra">
+            <h2></h2>
+            <div class="container-cards">
+                <div class="container-card">
+                    <div class="h3-banner">
+                        <h3>Virka Hjärtekatter</h3>
+                    </div>
+                    <p>Gillar du att virka, eller är du sugen på att lära dig? Då är det bara att sätta igång! Välj ett 
+                        härligt garn (gärna ur restgarns-högen), greppa tag i en virknål och handarbeta av hjärtans lust!</p>
+                    <a href="#">Här hitttar du all information du behöver</a>
+                </div>
+                <div class="container-card">
+                    <div class="h3-banner">
+                        <h3>Gör Syskondjur</h3>
+                    </div>
+                    <p>Till skillnad från Hjärtekatterna behöver inte Syskondjur vara katter eller ens virkade. Enda kraven 
+                        är att de är handgjorda och har ett rött hjärta (som Hjärtekatten, men utan ärr).</p>
+                    <a href="#">Här hitttar du all information du behöver</a>
+                </div>
+                <div class="container-card">
+                    <div class="h3-banner">
+                        <h3>Ge rabatter</h3>
+                    </div>
+                    <p>Säljer du garn i din butik? Då kan du göra som allt fler andra garnbutiker och erbjuda dina kunder rabatter på 
+                        garn till Hjärtekatter. Hur mycket och på vilket sätt väljer du själv såklart.</p>
+                    <a href="#">Här hitttar du all information du behöver</a>
+                </div>
+                <div class="container-card">
+                    <div class="h3-banner">
+                        <h3>Sprid ordet</h3>
+                    </div>
+                    <p>Ju fler som vet om att vi finns desto fler kan vi hjälpa. Berätta om oss för dina handarbetande 
+                        vänner, virka i grupp, gör Hjärtekatten till ett projekt i skolslöjden. Eller kom med helt egna 
+                        idéer.</p>
+                    <a href="#">Här hitttar du all information du behöver</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-virkmonster">
+            <h2>Så här virkar du en Hjärtekatt</h2>
+            <div class="container-instruktioner">
+                <h3>Du behöver:</h3>
+                <h4>Garn och virknål</h4>
+                <p>Valfritt! Passa på att använda restgarner eller handla os en av butikerna som erbjuder Hjärtekatten-rabatt. </p>
+                <p>Välj en virknål som är lite mindre än vad garnet rekommenderar. Då blir maskorna tätare och stoppningen tittar inte ut i maskhålen. </p>
+                <p>Exakt garnåtgång varierar beroende på garn och nål.</p>
+                <h4>Mönster</h4>
+                <p>Mönstret till själva kroppen hittar du <a href="#">här</a>. Det är översatt från originalmönstret 
+                    <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">Amineko Cat</a>, som vi fått tillåtelse att 
+                    använda av upphovsrättsinnehavare Nekoyama.</p>
+                <p>(Copyright of the pattern is reserved by <a href="https://www.ravelry.com/designers/nekoyama" target="_blank">Nekoyama</a>, the creator of 
+                Amineko. Copyright ©2002 Nekoyama. All rights reserved.) </p>
+            </div>
+            <div class="container-gor-sa-har">
+                <h3>Gör så här:</h3>
+                <ol>
+                    <li>Virka kattens delar efter Amineko-mönstret, virka ett rött hjärta efter föreslaget mönster eller valfri egen favorit. </li>
+                    <li>Fyll kropp, tassar (men inte benen/armarna), huvud och nos med fyllnadsvadd. Tassarna samt nedre delen av kroppen 
+                        (alltså rumpan) kan eventuellt fyllas med plastgranulat för att de ska få lite tyngd. Lägg gärna 
+                        granulatet i lite tyg, eller använd en gammal nylonstrumpa, så att kornen inte läcker ut genom maskorna. Armar, ben, 
+                        svans och öron behöver inte stoppas. Nosen rekommenderas att stoppas till hälften, så att man kan platta till den 
+                        lite. </li>
+                    <li>Sy ihop alla kroppsdelar, sy fast hjärtat på bröstets vänstra sida. </li>
+                    <li>Brodera ett ansikte på huvudet och ett ärr på hjärtat. Ta gärna inspiration från alla bilder på vår 
+                        <a href="https://www.facebook.com/hjartekatten" target="_blank">Facebook-sida</a>.</li>
+                    <li>Ge din färdiga Hjärtekatt ett namn! </li>
+                    <li>Skriv en liten lapp med kattens namn, vad för slags garn den är virkad med (bomull, akryl, ull), vad den är stoppad med, 
+                        samt eventuella allergener (husdjur, rök, starka parfymer). Det är helt frivilligt om du vill ange ditt namn, Instagram, 
+                        hemsida, blogg etc, men det är ofta mycket uppskattat av hjärtebarnens föräldrar. </li>
+                    <li>Fäst gärna lappen i katten, och lägg sedan allt i en plastpåse och skicka till ”din” mottagare i <a href="#">listan</a>.</li>
+                </ol>
+            </div>
+            <div class="container-mottagare-hjartekatter">
+                <h3>För närvarande skickar vi alla hjärtekatter till Lunds Universitetssjukhus, eftersom det finns gott om katter i Göteborg. 
+                    Skicka till den mottagare som matchar din födelsemånad. </h3>
+                <h4>Januari till april</h4>
+                <ul>
+                    <li>Ida-Sofie Karlsson</li>
+                    <li>Lokvägen 20A</li>
+                    <li>253 52 Påarp</li>
+                    <li>ida.sofie.karlsson@gmail.com</li>
+                    <li>070-858 36 15</li>
+                </ul>
+                <h4>Maj till augusti</h4>
+                <ul>
+                    <li>Linda Randsalu</li>
+                    <li>Flygelvägen 94</li>
+                    <li>224 72 Lund</li>
+                    <li>Linda.Randsalu@wendrup.se</li>
+                    <li>070-552 57 09</li>
+                </ul>
+                <h4>September till december</h4>
+                <ul>
+                    <li>Ulrica Persson</li>
+                    <li>Vattle Byväg 69</li>
+                    <li>235 94 Vellinge</li>
+                </ul>
+            </div>
+            <div class="container-svenskt-monster">
+                <!--svenska översättningen av mönstret-->
+            </div>
+        </div> <!--slut container virk-monster-->
+        <div class="container-syskondjur">
+            <h2>När en familjemedlem blir sjuk påverkas hela familjen</h2>
+            <p>Många hjärtebarn föds i familjer som redan har barn och det kan vara svårt även för friska storasyskon när småsyskonet är sjukt. 
+                Föräldrarna är oroliga och rädda och måste kanske vara mycket på sjukhuset. Kanske är det svårt att förstå vad som händer och 
+                kanske känner sig storasyster eller storebror lite i skymundan?</p>
+            <p>Vi vill försöka hjälpa hela hjärtebarnsfamiljen, och uppmärksamma även syskonen. Få dem att känna sig sedda. Därför delar vi 
+                förutom Hjärtekatter även ut Syskondjur till sjukhusen. De kan se ut lite hur som helst, så länge de har ett rött hjärta som är 
+                helt, utan ärr. På sp vis kan familjen lättare tala om barnens olika hjärtan - ett som är helt, och ett som är lagat.</p>
+            <p>Vill du hjälpa oss genom att göra Syskondjur? Bra! Då är det bara att låta kreativiteten flöda, ett Syskondjur får du nämligen 
+                göra nästan precis hur du vill. Hur stort eller smått du vill, i vilket material och vilken teknik som helst. Sticka, virka, 
+                sy, tova, filta, nålbind, brodera, tälj eller väv - allt är tillåtet så länge som det är handgjort och har ett helt hjärta på 
+                bröstet. Vad sägs om en syskonbläckfisk i trä? En stickad syskonkanin? En handsydd syskonsköldpadda eller en tovad syskonbil?</p>
+            <p>Syskondjuren samlas in på samma vis som Hjärtekatterna, med skillnaden att vi inte håller räkningen. Men du får gärna skicka 
+                med en lapp med samma information som till Hjärtekatterna:</p>
+            <ul>
+                <li>vad för slags material den är skapad av, samt eventuella allergener (husdjur, rök, starka parfymer). Det är helt frivilligt 
+                    om du vill ange ditt namn, Instagram, hemsida, blogg etc, men det är ofta mycket uppskattat av hjärtebarnens föräldrar.</li>
+            </ul>
+            <p>Lägg ditt syskondjur i en plastpåse och skicka till den mottagare som matchar din födelsemånad.</p>
+            <div class="container-mottagare-syskondjur">
+                <h3>Skicka till den mottagare som matchar din födelsemånad.</h3>
+                <h4>Januari och februari</h4>
+                <ul>
+                    <li>Sanna Åhlén</li>
+                    <li>Hedeforsvägen 28a</li>
+                    <li>443 61 Stenkullen</li>
+                    <li>suahlen@gmail.com</li>
+                </ul>
+                <h4>Mars och april</h4>
+                <ul>
+                    <li>Ida-Sofie Karlsson</li>
+                    <li>Lokvägen 20A</li>
+                    <li>253 52 Påarp</li>
+                    <li>ida.sofie.karlsson@gmail.com</li>
+                    <li>070-858 36 15</li>
+                </ul>
+                <h4>Maj och juni</h4>
+                <ul>
+                    <li>Linda Randsalu</li>
+                    <li>Flygelvägen 94</li>
+                    <li>224 72 Lund</li>
+                    <li>Linda.Randsalu@wendrup.se</li>
+                    <li>070-552 57 09</li>
+                </ul>
+                <h4>Juli till oktober</h4>
+                <ul>
+                    <li>Sanna Åhlén</li>
+                    <li>Hedeforsvägen 28a</li>
+                    <li>443 61 Stenkullen</li>
+                    <li>suahlen@gmail.com</li>
+                </ul>
+                <h4>November och december</h4>
+                <ul>
+                    <li>Ulrica Persson</li>
+                    <li>Vattle Byväg 69</li>
+                    <li>235 94 Vellinge</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-om-oss">
+            <h2>Allting har en början och vår berättelse börjar med Anton</h2>
+            <p>Historian om hur Hjärtekatten kom till är lite som livet kan vara: en blandning av sorg, glädje, hopp, rädsla och beslutsamhet. 
+                Den skulle kunna börja 2011, med att de två småbarnsföräldrarna Susanne och Therese fick en gemensam idé - men egentligen 
+                började allt samma dag som lilla Anton föddes, två år tidigare. Susanne berättar med egna ord:</p>
+            <p>"Den 19 mars 2009 föddes min lilla Anton på Östra Sjukhuset i Göteborg. En underbar bebis som kom till världen efter en jobbig 
+                och svår förlossning. Tiden på BB förflöt sådär som den ska, och efter tre dagar var det dags att åka hem. Trodde vi. Så blev 
+                det inte, för under den sedvanliga läkarunder-sökningen märkte vi hur läkaren förändrades och blev spänd. Sedan gick det snabbt.</p>
+            <p>Läkaren rusade ut ur rummet och bad oss följa med upp till Neonatalen för provtagning. Anton lades i en kuvös medan vi föräldrar 
+                visades ut och fick prata med en hjärtläkare som förklarade att vår bebis var sjuk. Väldigt sjuk. På den raka frågan om han 
+                skulle överleva fick vi svaret ”jag vet inte”. Där och då rämnade vår värld.</p>
+            <p>Veckor av undersökningar och operationer följde på Drottning Silvias barn- och ungdomssjukhus, avdelning 323. Framgångar och 
+                bakslag avlöste varandra men tack vare en sista akut operation med helt ny teknik fick vi till slut äntligen komma hem med 
+                Anton, nu en månad gammal.</p>
+            <p>Väl hemma visste vi inte hur vi skulle bete oss nu när vi inte längre kunde titta på en monitor för att se syresättningen och 
+                alla andra viktiga data. Jag var livrädd för att han skulle bli sämre och oroade mig för allt. Men samtidigt var jag tacksam 
+                över tiden och personalen på 323:an. Jag önskade att det fanns ett sätt att tacka dem, och kanske samtidigt ge lite tröst åt 
+                alla de hjärtebarnsfamiljer som befann sig där efter att vi åkt hem. Frågan var bara hur det skulle gå till."</p>
+            <p>Det tog lite tid, men under förvåren 2011 kom faktiskt svaret på den frågan. Under en Hjärtebarnsauktion på bloggen 
+                <a href="https://www.hejaabbe.com/" target="_blank">Heja Abbe</a> såg Susanne den virkade 
+                <a href="https://www.hejaabbe.com/2011/02/auktion-13-hjartekatt.html" target="_blank">Hjärtekatten Abbe</a> och ville ha en 
+                likadan till Anton. Hon drog sig till minnes att jag (Therese), en av 
+                mammabekanterna från bebistiden, var duktig på att sticka och frågade om jag kunde tänka mig att ta emot en virkbeställning.</p>
+            <p>Det kunde jag. Problemet var bara att jag aldrig lärt mig virka, men det var inget en amigurumi-bok och ganska mycket tålamod 
+                inte kunde lösa. Efter ett hemligt antal försök hade Anton till slut sin egen Hjärtekatt. Som av en händelse nämnde Susanne att 
+                om hon var rik skulle hon beställa 100 virkade katter och skänka dem till 323:an, men hon var ju inte rik - och jag skulle 
+                behöva flera år på mig för att klara av den mastodontuppgiften. Nej, den idén skulle aldrig funka. Eller?</p>
+            <p>Den natten sov jag dåligt. Tanken på virkade katter till små hjärtsjuka barn ville inte lämna mig ifred och jag vred och vände 
+                på problemet. Klockan fem på morgonen vaknade jag med en lösning lika enkel som självklar: Vem hade sagt att jag behövde virka 
+                alla katterna själv? Det fanns ju hundratals handarbetande människor runt om i landet som säkert ville hjälpa till med ett sådant 
+                här hjärtevärmande projekt. Vi kunde kanske få in de 100 katterna med deras hjälp. Jag mailade Susanne det första jag gjorde 
+                den morgonen.</p>
+            <p>Det blev många sena nätter efter heltidsjobb och familjeliv men den 19 april 2011 lanserade vi Hjärtekatten med bultande hjärtan. 
+                Vårt mål var att få in 100 katter till årsskiftet men ganska snart visade det sig att vi hade underskattat Sveriges handarbetare, 
+                för redan efter två månader kunde vi leverera hela 500 Hjärtekatter till Drottning Silvias barn- och ungdomssjukhus i Göteborg. 
+                Innan sommaren var slut hade vi levererat ytterligare 500 till Skånes universitetssjukhus i Lund.</p>
+            <p>Under åren som gått har det fortsatt att komma in Hjärtekatter och vi har fått utöka organisationen med ett gäng hängivna 
+                mottagare i Lund och Göteborg. Nära 3500 barn har fått lämna sjukhuset med en alldeles egen handgjord Hjärtekatt och det är 
+                någonting vi kommer att vara stolta, glada och tacksamma över i hela våra liv.</p>
+            <p>Vi hoppas att du gillar Hjärtekatten lika mycket som vi gör.</p>
+            <p><span>Therese Sharp, Göteborg 13 april 2017</span></p>
+        </div>
+
+
+
     </main>
     <footer>
-        <!--footer kopieras till alla sidor efter att den är perfekt-->
         <h3>Kontaktinformation</h3>
         <ul>
             <li>email</li>
