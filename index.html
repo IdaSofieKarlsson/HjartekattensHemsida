@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,14 +16,15 @@
         <!--gör favicon av beskuren logga-->  
         <nav>
             <ul>
-                <li><a href="#">Hem</a></li>
-                <li><a href="#">Så här kan du bidra</a></li>
-                <li><a href="#">Virkmönster och instruktioner</a></li>
-                <li><a href="#">Hjärtekatter som hittat hem</a></li>
-                <li><a href="#">Om oss</a></li>
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#bidra">Så här kan du bidra</a></li>
+                <li><a href="#instruktioner">Virkmönster och instruktioner</a></li>
+                <li><a href="#about-us">Om oss</a></li>
                 <li><a href="#">Kontakt och FAQ</a></li>
             </ul>
         </nav>
+    </header>
+    <main>
         <!--smal nav med de tre frågorna: mönster hjärtekatt, info syskondjur, adresser mottagare. 
         smal remsa, sticky position, följer med när man scrollar-->
         <nav>
@@ -33,20 +34,23 @@
                 <li><a href="#">Hit skickar du dina alster</a></li>
             </ul>
         </nav> 
-    </header>
-    <main>
         <div class="container-large-img">
+            <h1 id="home">Hjärtekatten</h1>
+            <span>Den finaste virkningen du kan tänka dig</span>
             <div class="antal-insamlade-hjartekatter">
-                <span>7014 insamlade Hjärtekatter!</span> <!--span ligger på bilden, fixed-->
+                <p class="p-antal-insamlade-hjartekatter">7014 insamlade Hjärtekatter!</p> <!--span ligger på bilden, fixed-->
             </div>
-            <img src="#" alt="Blond flicka kramar sin hjärtekatt"> <!--ändra till bakgrundsbild på div-->
+            <figure>
+                <img src="#" alt="Blond flicka kramar sin hjärtekatt"> <!--ändra till bakgrundsbild på div-->
+                <figcaption>Blond flicka kramar sin hjärtekatt</figcaption>
+            </figure>
         </div>
-        <div class="container-home">
+        <section class="container-home">
             <div class="container-intro">
                 <h2 class="h2-intro">Ge lite extra kärlek till hjärtebarnen och deras familjer. Allt du behöver är lite garn!</h2>
                 <p class="p-intro">Vi på Hjärtekatten samlar in handvirkade figurer som vi skänker till barnhjärt-avdelningarna vid 
                     universitetssjukhusen i Göteborg och Lund. Dit kommer nämligen alla Sveriges hjärtebarn för att opereras, och när de åker 
-                    hem igen får de med sig en alldeles egen Hjärtekatt. </p>
+                    hem igen får de med sig en alldeles egen Hjärtekatt.</p>
                 <p class="p-intro">Vill du vara med och hjälpa till? Det är busenkelt! Allt du behöver göra är att virka, skicka figurerna 
                     till oss och vips så har vi tillsammans skänkt lite extra glädje till hjärtebarnen. Toppen, eller hur? </p>
                 <a href="#">Läs mer om hur du gör för att hjälpa</a>
@@ -57,8 +61,8 @@
                     <a href="#">Så här virkas Hjärtekatten</a>
                 </div>
             </div>
-        </div>
-        <div class="container-bidra">
+        </section>
+        <section class="container-bidra" id="bidra">
             <h2></h2>
             <div class="container-cards">
                 <div class="container-card">
@@ -75,15 +79,15 @@
                     </div>
                     <p>Till skillnad från Hjärtekatterna behöver inte Syskondjur vara katter eller ens virkade. Enda kraven 
                         är att de är handgjorda och har ett rött hjärta (som Hjärtekatten, men utan ärr).</p>
-                    <a href="#">Här hitttar du all information du behöver</a>
+                    <a href="#syskondjur">Här hitttar du all information du behöver</a>
                 </div>
                 <div class="container-card">
-                    <div class="h3-banner">
+                    <div class="h3-banner" id="">
                         <h3>Ge rabatter</h3>
                     </div>
                     <p>Säljer du garn i din butik? Då kan du göra som allt fler andra garnbutiker och erbjuda dina kunder rabatter på 
                         garn till Hjärtekatter. Hur mycket och på vilket sätt väljer du själv såklart.</p>
-                    <a href="#">Här hitttar du all information du behöver</a>
+                    <a href="#rabatter">Här hitttar du all information du behöver</a>
                 </div>
                 <div class="container-card">
                     <div class="h3-banner">
@@ -95,13 +99,13 @@
                     <a href="#">Här hitttar du all information du behöver</a>
                 </div>
             </div>
-        </div>
-        <div class="container-virkmonster">
+        </section>
+        <section class="container-virkmonster">
             <h2>Så här virkar du en Hjärtekatt</h2>
-            <div class="container-instruktioner">
+            <div class="container-instruktioner" id="instruktioner">
                 <h3>Du behöver:</h3>
                 <h4>Garn och virknål</h4>
-                <p>Valfritt! Passa på att använda restgarner eller handla os en av butikerna som erbjuder Hjärtekatten-rabatt. </p>
+                <p>Valfritt! Passa på att använda restgarner eller handla os en av butikerna som erbjuder <a href="#">Hjärtekatten-rabatt</a>.</p>
                 <p>Välj en virknål som är lite mindre än vad garnet rekommenderar. Då blir maskorna tätare och stoppningen tittar inte ut i maskhålen. </p>
                 <p>Exakt garnåtgång varierar beroende på garn och nål.</p>
                 <h4>Mönster</h4>
@@ -130,7 +134,7 @@
                     <li>Fäst gärna lappen i katten, och lägg sedan allt i en plastpåse och skicka till ”din” mottagare i <a href="#">listan</a>.</li>
                 </ol>
             </div>
-            <div class="container-mottagare-hjartekatter">
+            <aside class="container-mottagare-hjartekatter">
                 <h3>För närvarande skickar vi alla hjärtekatter till Lunds Universitetssjukhus, eftersom det finns gott om katter i Göteborg. 
                     Skicka till den mottagare som matchar din födelsemånad. </h3>
                 <h4>Januari till april</h4>
@@ -155,12 +159,13 @@
                     <li>Vattle Byväg 69</li>
                     <li>235 94 Vellinge</li>
                 </ul>
-            </div>
+            </aside>
             <div class="container-svenskt-monster">
                 <!--svenska översättningen av mönstret-->
+                
             </div>
-        </div> <!--slut container virk-monster-->
-        <div class="container-syskondjur">
+        </section> <!--slut container virk-monster-->
+        <section class="container-syskondjur"  id="syskondjur">
             <h2>När en familjemedlem blir sjuk påverkas hela familjen</h2>
             <p>Många hjärtebarn föds i familjer som redan har barn och det kan vara svårt även för friska storasyskon när småsyskonet är sjukt. 
                 Föräldrarna är oroliga och rädda och måste kanske vara mycket på sjukhuset. Kanske är det svårt att förstå vad som händer och 
@@ -179,7 +184,7 @@
                     om du vill ange ditt namn, Instagram, hemsida, blogg etc, men det är ofta mycket uppskattat av hjärtebarnens föräldrar.</li>
             </ul>
             <p>Lägg ditt syskondjur i en plastpåse och skicka till den mottagare som matchar din födelsemånad.</p>
-            <div class="container-mottagare-syskondjur">
+            <aside class="container-mottagare-syskondjur">
                 <h3>Skicka till den mottagare som matchar din födelsemånad.</h3>
                 <h4>Januari och februari</h4>
                 <ul>
@@ -217,9 +222,9 @@
                     <li>Vattle Byväg 69</li>
                     <li>235 94 Vellinge</li>
                 </ul>
-            </div>
-        </div>
-        <div class="container-om-oss">
+            </aside>
+        </section>
+        <article class="container-om-oss" id="about-us">
             <h2>Allting har en början och vår berättelse börjar med Anton</h2>
             <p>Historian om hur Hjärtekatten kom till är lite som livet kan vara: en blandning av sorg, glädje, hopp, rädsla och beslutsamhet. 
                 Den skulle kunna börja 2011, med att de två småbarnsföräldrarna Susanne och Therese fick en gemensam idé - men egentligen 
@@ -259,18 +264,76 @@
                 mottagare i Lund och Göteborg. Nära 3500 barn har fått lämna sjukhuset med en alldeles egen handgjord Hjärtekatt och det är 
                 någonting vi kommer att vara stolta, glada och tacksamma över i hela våra liv.</p>
             <p>Vi hoppas att du gillar Hjärtekatten lika mycket som vi gör.</p>
-            <p><span>Therese Sharp, Göteborg 13 april 2017</span></p>
-        </div>
-
+            <p>Therese Sharp, Göteborg 13 april 2017</p>
+        </article>
+        <section class="container-butiker-med-rabatt" id="rabatter">
+            <h2>Här hittar du garnbutiker med hjärtat på rätta stället</h2>
+            <p>Det är många som vill vara med och hjälpa hjärtebarnsfamiljerna på alla sätt de kan. Här är ett helt gäng garnbutiker som 
+                erbjuder rabatter till dig som vill virka Hjärtekatter. För information om hur du tillgodoser dig rabatten 
+                (eventuell rabattkod osv.) kontaktar du varje enskild butik.</p>
+            <ul>
+                <li><a href="https://www.facebook.com/avigochrattorshalla/?locale=sv_SE" target="_blank">Avig & Rät</a></li>
+                <li>Erbjuder 20% på Julia och Stina</li>
+                <li>Aliforsgatan 1 i Torshälla </li>
+            </ul>
+            <ul>
+                <li><a href="https://www.instagram.com/broderiochgarn/" target="_blank">Broderi & Garn</a></li>
+                <li>Erbjuder 20% rabatt</li>
+                <li>Drottninggatan 31 i Göteborg</li>
+            </ul>
+            <ul>
+                <li><a href="https://gbsgarn.se/" target="_blank">G-B:s Garn</a></li>
+                <li>Erbjuder 10% rabatt</li>
+                <li>Göteborgsvägen 25 i Mölndal</li>
+            </ul>
+            <ul>
+                <li><a href="https://www.facebook.com/p/Klara-Tyg-Garn-100083048931277/" target="_blank">Klara Tyg & Garn</a></li>
+                <li>Erbjuder 10% rabatt på Soft Cotton</li>
+                <li>Klara Norra Kyrkogata 32 i Stockholm</li>
+            </ul>
+            <ul>
+                <li><a href="https://www.garngalleriet.se/" target="_blank">Garngalleriet</a></li>
+                <li>Erbjuder 20% på bomullsgarner</li>
+            </ul>
+            <ul>
+                <li><a href="https://virknalarochtillbehor.se/" target="_blank">Virknålar och Tillbehör</a></li>
+                <li>Erbjuder garnpaket till välgörenhet</li>
+                <li>20 st nystan Catona Små 25g</li>
+            </ul>
+            <ul>
+                <li><a href="https://deisydesign.nu/" target="_blank">Deisy Design</a></li>
+                <li>Erbjuder komplett kit med garn från Muskat för 100 kr</li>
+                <li>Avenyn 39 i Göteborg</li>
+            </ul>
+            <ul>
+                <li><a href="https://www.kreativastunder.se/" target="_blank">Kreativa Stunder</a></li>
+                <li>Erbjuder 15% rabatt</li>
+                <li>Storgatan 3 i Söderköping</li>
+            </ul>
+        </section>
+        <section class="container-sprid-budskapet">
+            <h2>Flygblad, virkcirklar och skolslöjd…</h2>
+            <p>Det är bara några av alla de kreativa idéer som engagerade Hjärtekatten-virkare och andra eldsjälar kommit på och genomfört. </p>
+            <p>En del har satt upp flygblad i sina garnbutiker eller i centrum, någon startade en ABF-kurs med Hjärtekatten som tema, en annan startade 
+                en virk-along på sitt stick-café och en härlig slöjdlärare använde Hjärtekatten som ett projekt för sina skolelever. Det projektet blev 
+                förresten väldigt lyckat eftersom vi fick en hel låda Hjärtekatter samtidigt som eleverna kände att de bidrog till något fint – och 
+                lärde sig virka på köpet! Win-win, kan man säga.</p>
+            <p>Andra har skrivit om oss i olika medier eller medverkat i artiklar och talat för vår räkning. Man har tipsat tidningar, radio och 
+                sociala kanaler om vårt arbete vilket har lett till ökad publicitet.</p>
+            <p>Flera garnbutiker har anordnat restgarnsinsamlingar där överblivna nystan blir älskvärda Hjärtekatter, och en stor 
+                garntillverkare (som vill vara anonym) skänkte oss en hel kartong full med garn.</p>
+            <p>Vi blir alltid lika glada när människor engagerar sig i Hjärtekatten, stort eller litet. Har du en spännande idé eller förslag 
+                på ett roligt samarbete? Berätta om det för oss! Lättast når du oss genom att skicka ett PM på vår 
+                <a href="https://www.facebook.com/hjartekatten">Facebook-sida</a>.</p>
+        </section>
 
 
     </main>
     <footer>
         <h3>Kontaktinformation</h3>
         <ul>
-            <li>email</li>
-            <li>facebook</li>
-            <li>instagram</li>
+            <li><a href="https://www.facebook.com/hjartekatten" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/hjartekatten/" target="_blank">Instagram</a></li>
         </ul>
     </footer>
 </body>
