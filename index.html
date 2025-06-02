@@ -11,11 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="/images/Hjartekatten-banner-staende-200x300.gif" width="50px" height="75px" alt="Hjärtekattens logotyp">
-        <!--gör favicon av beskuren logga-->  
+    <header class="header">
+        <div class="antal-insamlade-hjartekatter">
+            <p class="p-antal-insamlade-hjartekatter">7014 insamlade Hjärtekatter!</p>
+            <img class="img-logo" src="/images/Hjartekatten-banner-staende-200x300.gif" width="50px" height="75px" alt="Hjärtekattens logotyp"> 
+        </div>
         <nav>
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="#home">Hem</a></li>
                 <li><a href="#bidra">Så här kan du bidra</a></li>
                 <li><a href="#instruktioner">Virkmönster och instruktioner</a></li>
@@ -25,26 +27,20 @@
         </nav>
     </header>
     <main>
-        <!--smal nav med de tre frågorna: mönster hjärtekatt, info syskondjur, adresser mottagare. 
-        smal remsa, sticky position, följer med när man scrollar-->
-        <nav>
-            <ul>
-                <li><a href="#monster">Hjärtekattens mönster</a></li>
-                <li><a href="#">Syskondjur</a></li>
-                <li><a href="#">Hit skickar du dina alster</a></li>
-            </ul>
-        </nav> 
-        <div class="container-large-img">
-            <h1 id="home">Hjärtekatten</h1>
-            <span>Den finaste virkningen du kan tänka dig</span>
-            <div class="antal-insamlade-hjartekatter">
-                <p class="p-antal-insamlade-hjartekatter">7014 insamlade Hjärtekatter!</p> <!--span ligger på bilden, fixed-->
-            </div>
+        <section class="container-large-img">
+            <div class="container-large-text">
+                <h1 id="home">Hjärtekatten</h1>
+                <span>Den finaste virkningen du kan tänka dig</span>
+                <p>Hon ser kanske inte så märkvärdig ut, en Hjärtekatt bland alla andra, men hon är speciell. Detta är Lilly, Hjärtekatt 
+                    nummer 7000. En hisnande tanke att projektet, som för 14 år sedan hade ett ödmjukt mål om <em>kanske</em> 
+                    100 Hjärtekatter, nu har kommit så långt... Läs om <a href="#about-us">hur allt startade.</a></p>
+            </div> 
             <figure>
-                <img src="#" alt="Blond flicka kramar sin hjärtekatt"> <!--ändra till bakgrundsbild på div-->
-                <figcaption>Blond flicka kramar sin hjärtekatt</figcaption>
+                <img src="./images/lilly-7000.png" alt="Lilly, katt nummer 7000" width="450" height="600"> <!--ev - ändra till bakgrundsbild på div-->
+                <figcaption>Lilly, katt nummer 7000</figcaption>
             </figure>
-        </div>
+        </section>
+
         <section class="container-home">
             <div class="container-intro">
                 <h2 class="h2-intro">Ge lite extra kärlek till hjärtebarnen och deras familjer. Allt du behöver är lite garn!</h2>
@@ -52,18 +48,20 @@
                     universitetssjukhusen i Göteborg och Lund. Dit kommer nämligen alla Sveriges hjärtebarn för att opereras, och när de åker 
                     hem igen får de med sig en alldeles egen Hjärtekatt.</p>
                 <p class="p-intro">Vill du vara med och hjälpa till? Det är busenkelt! Allt du behöver göra är att virka, skicka figurerna 
-                    till oss och vips så har vi tillsammans skänkt lite extra glädje till hjärtebarnen. Toppen, eller hur? </p>
-                <a href="#">Läs mer om hur du gör för att hjälpa</a>
+                    till oss och vips så har vi tillsammans skänkt lite extra glädje till hjärtebarnen. Toppen, eller hur?</p>
+                <a href="#bidra">Läs mer om hur du gör för att hjälpa</a>
             </div>
             <div class="container-direct-pattern">
                 <img src="#" alt="Hjärtekatts-virknings-projekt" width="300px" height="200px">
                 <div class="banner-link-pattern">
-                    <a href="#monster">Så här virkas Hjärtekatten</a>
+                    <a href="#instruktioner">Så här virkas Hjärtekatten</a>
                 </div>
             </div>
         </section>
+
         <section class="container-bidra" id="bidra">
-            <h2></h2>
+            <h2>Det finns många sätt att hjälpa.</h2>
+            <h2>Välj det som passar dig bäst.</h2>
             <div class="container-cards">
                 <div class="container-card">
                     <div class="h3-banner">
@@ -72,6 +70,7 @@
                     <p>Gillar du att virka, eller är du sugen på att lära dig? Då är det bara att sätta igång! Välj ett 
                         härligt garn (gärna ur restgarns-högen), greppa tag i en virknål och handarbeta av hjärtans lust!</p>
                     <a href="#instruktioner">Här hitttar du all information du behöver</a>
+                    <a href="#monster" target="_blank">Här är direktlänk till Hjärtekattens mönster</a>
                 </div>
                 <div class="container-card">
                     <div class="h3-banner">
@@ -82,7 +81,7 @@
                     <a href="#syskondjur">Här hitttar du all information du behöver</a>
                 </div>
                 <div class="container-card">
-                    <div class="h3-banner" id="">
+                    <div class="h3-banner">
                         <h3>Ge rabatter</h3>
                     </div>
                     <p>Säljer du garn i din butik? Då kan du göra som allt fler andra garnbutiker och erbjuda dina kunder rabatter på 
@@ -100,45 +99,50 @@
                 </div>
             </div>
         </section>
+
         <section class="container-virkmonster">
             <h2>Så här virkar du en Hjärtekatt</h2>
             <div class="container-instruktioner" id="instruktioner">
                 <h3>Du behöver:</h3>
                 <h4>Garn och virknål</h4>
-                <p>Valfritt! Passa på att använda restgarner eller handla os en av butikerna som erbjuder <a href="#">Hjärtekatten-rabatt</a>.</p>
-                <p>Välj en virknål som är lite mindre än vad garnet rekommenderar. Då blir maskorna tätare och stoppningen tittar inte ut i maskhålen. </p>
-                <p>Exakt garnåtgång varierar beroende på garn och nål.</p>
+                <ul>
+                    <li>Valfritt! Passa på att använda restgarner eller handla os en av butikerna som erbjuder <a href="#rabatter">Hjärtekatten-rabatt</a>.</li>
+                    <li>Välj en virknål som är lite mindre än vad garnet rekommenderar. Då blir maskorna tätare och stoppningen tittar inte ut i maskhålen. </li>
+                    <li>Exakt garnåtgång varierar beroende på garn och nål.</li>
+                </ul>
                 <h4>Mönster</h4>
-                <p>Mönstret till själva kroppen hittar du <a href="#monster">här</a>. Det är översatt från originalmönstret 
+                <ul>
+                    <li>Mönstret till själva kroppen hittar du <a href="#monster" target="_blank">här</a>. Det är översatt från originalmönstret 
                     <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">Amineko Cat</a>, som vi fått tillåtelse att 
-                    använda av upphovsrättsinnehavare Nekoyama.</p>
-                <p>(Copyright of the pattern is reserved by <a href="https://www.ravelry.com/designers/nekoyama" target="_blank">Nekoyama</a>, the creator of 
-                Amineko. Copyright ©2002 Nekoyama. All rights reserved.) </p>
+                    använda av upphovsrättsinnehavare Nekoyama.</li>
+                    <li><em>(Copyright of the pattern is reserved by <a href="https://www.ravelry.com/designers/nekoyama" target="_blank">Nekoyama</a>, the creator of 
+                Amineko. Copyright ©2002 Nekoyama. All rights reserved.)</em></li>
+                </ul>
             </div>
             <div class="container-gor-sa-har">
                 <h3>Gör så här:</h3>
                 <ol>
-                    <li>Virka kattens delar efter Amineko-mönstret, virka ett rött hjärta efter föreslaget mönster eller valfri egen favorit. </li>
+                    <li>Virka kattens delar efter Amineko-mönstret, virka ett rött hjärta efter föreslaget mönster eller valfri egen favorit.</li>
                     <li>Fyll kropp, tassar (men inte benen/armarna), huvud och nos med fyllnadsvadd. Tassarna samt nedre delen av kroppen 
                         (alltså rumpan) kan eventuellt fyllas med plastgranulat för att de ska få lite tyngd. Lägg gärna 
                         granulatet i lite tyg, eller använd en gammal nylonstrumpa, så att kornen inte läcker ut genom maskorna. Armar, ben, 
                         svans och öron behöver inte stoppas. Nosen rekommenderas att stoppas till hälften, så att man kan platta till den 
-                        lite. </li>
+                        lite.</li>
                     <li>Sy ihop alla kroppsdelar, sy fast hjärtat på bröstets vänstra sida. </li>
                     <li>Brodera ett ansikte på huvudet och ett ärr på hjärtat. Ta gärna inspiration från alla bilder på vår 
                         <a href="https://www.facebook.com/hjartekatten" target="_blank">Facebook-sida</a>.</li>
-                    <li>Ge din färdiga Hjärtekatt ett namn! </li>
+                    <li>Ge din färdiga Hjärtekatt ett namn!</li>
                     <li>Skriv en liten lapp med kattens namn, vad för slags garn den är virkad med (bomull, akryl, ull), vad den är stoppad med, 
                         samt eventuella allergener (husdjur, rök, starka parfymer). Det är helt frivilligt om du vill ange ditt namn, Instagram, 
-                        hemsida, blogg etc, men det är ofta mycket uppskattat av hjärtebarnens föräldrar. </li>
+                        hemsida, blogg etc, men det är ofta mycket uppskattat av hjärtebarnens föräldrar.</li>
                     <li>Fäst gärna lappen i katten, och lägg sedan allt i en plastpåse och skicka till ”din” mottagare i <a href="#">listan</a>.</li>
                 </ol>
             </div>
             <aside class="container-mottagare-hjartekatter">
                 <h3>För närvarande skickar vi alla hjärtekatter till Lunds Universitetssjukhus, eftersom det finns gott om katter i Göteborg. 
-                    Skicka till den mottagare som matchar din födelsemånad. </h3>
+                    Skicka till den mottagare som matchar din födelsemånad.</h3>
                 <h4>Januari till april</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Ida-Sofie Karlsson</li>
                     <li>Lokvägen 20A</li>
                     <li>253 52 Påarp</li>
@@ -146,7 +150,7 @@
                     <li>070-858 36 15</li>
                 </ul>
                 <h4>Maj till augusti</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Linda Randsalu</li>
                     <li>Flygelvägen 94</li>
                     <li>224 72 Lund</li>
@@ -154,169 +158,13 @@
                     <li>070-552 57 09</li>
                 </ul>
                 <h4>September till december</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Ulrica Persson</li>
                     <li>Vattle Byväg 69</li>
                     <li>235 94 Vellinge</li>
                 </ul>
             </aside>
-            <div class="container-svenskt-monster">
-                <!--svenska översättningen av mönstret-->
-                <h2 id="monster">Svensk översättning av Amineko cat</h2>
-                <p>Det här är en svensk version av mönstret <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">
-                    Amineko Crocheted Cat</a>, översatt med tillåtelse från upphovsrättsinnehavaren. Till skillnad från originalmönstret har 
-                    vi valt att virka huvud och kropp i en sammanhängande del, då slipper vi ett monteringsmoment senare. Lycka till!</p>
-                <h3>Du behöver:</h3>
-                <h4>Garn och virknål</h4>
-                <p>Valfritt! Passa på att använda restgarner eller handla os en av butikerna som erbjuder <a href="#">Hjärtekatten-rabatt</a>.</p>
-                <p>Välj en virknål som är lite mindre än vad garnet rekommenderar. Då blir maskorna tätare och stoppningen tittar inte ut i maskhålen. </p>
-                <p>Exakt garnåtgång varierar beroende på garn och nål.</p>
-                <h4>Mönster</h4>
-                <p>Kattmönstret <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">Amineko Crocheted Cat</a></p>
-                <p>(Copyright of the pattern is reserved by <a href="https://www.ravelry.com/designers/nekoyama" target="_blank">Nekoyama</a>, 
-                    the creator of Amineko. Copyright ©2002 Nekoyama. All rights reserved.)</p>
-                <p>Till hjärtat får du använda vilket mönster du vill. I mönstret till katten, ger vi förslag på några vi gillar.</p>
-                <h4>Övrigt</h4>
-                <ul>
-                    <li>Fyllnadsvadd</li>
-                    <li>(eventuellt plastgranulat samt tyg/nylonstrumpa)</li>
-                    <li>Nål för att sy ihop delarna samt brodera ansikte och ärr</li>
-                    <li>(eventuellt en markör för att hålla reda på varven)</li>
-                    <li>Lite garn för ansikte och ärr </li>
-                    <li>… och kärlek förstås!</li>
-                </ul>
-                <h3>Gör så här: </h3>
-                <p>Det finns flera olika sätt att starta en amigurumi-virkning. Välj något av våra exempel eller din egen favorit. </p>
-                <h4>Loop:</h4>
-                <p>Klipp av ca 20 cm garn, forma en 3-4 cm stor ögla på mitten. Ta garnet du ska virka med och gör en ögla på 
-                    nålen som vanligt. Stick in nålen i loopens mitt, när du börjar virka runt garnet i loopen kommer loopens garn att löpa som 
-                    en kabel inuti maskorna du virkar. Virka runt loop-garnet och dra sedan i dess båda ändar så den dras åt och sluts till 
-                    en ring.</p>
-                <h4>Två luftmaskor:</h4>
-                <p>Gör två luftmaskor och virka varv ett i den andra luftmaskan från nålen. Detta alternativ är det lättaste, dt kan dock bli 
-                    ett litet hål i mitten, men det kan du enkelt sy ihop senare.</p>
-                <p>Nu kör vi!</p>
-                <h4>Huvud och kropp</h4>
-                <ul>
-                    <li>V 1: Virka 6 fm runt loopen eller i luftmaskan </li>
-                    <li>V 2: 2 fm i varje fm (= 12 fm)</li>
-                    <li>V 3: *1 fm, 2 fm i nästa fm* totalt 6 ggr (=18 fm)</li>
-                    <li>V 4: *2 fm, 2 fm i nästa fm* totalt 6 ggr (=24 fm)</li>
-                    <li>V 5: *3 fm, 2 fm i nästa fm* totalt 6 ggr (=30 fm)</li>
-                    <li>V 6: *4 fm, 2 fm i nästa fm* totalt 6 ggr (=36 fm)</li>
-                    <li>V 7: *5 fm, 2 fm i nästa fm* totalt 6 ggr (=42 fm)</li>
-                    <li>V 8: *6 fm, 2 fm i nästa fm* totalt 6 ggr (=48 fm)</li>
-                    <li>V 9 – 15: 1 fm i varje fm (= 48 fm)</li>
-                    <li>V 16: *6 fm, 2 fm tillsammans* totalt 6 ggr (= 42 fm)</li>
-                    <li>V 17: *5 fm, 2 fm tillsammans* totalt 6 ggr (= 36 fm)</li>
-                    <li>V 18: *4 fm, 2 fm tillsammans* totalt 6 ggr (= 30 fm)</li>
-                    <li>V 19: *3 fm, 2 fm tillsammans* totalt 6 ggr (= 24 fm)</li>
-                    <li>V 20: *2 fm, 2 fm tillsammans* totalt 6 ggr (= 18 fm)</li>
-                </ul>
-                <p>Stoppa huvudet med fyllnadsvadd och fortsätt sedan kroppen.</p>
-                <ul>
-                    <li>V 21 – 23: 1 fm i varje fm (= 18 fm)</li>
-                    <li>V 24: *2 fm, 2 fm i nästa fm* totalt 6 ggr (= 24 fm)</li>
-                    <li>V 25 - 26: 1 fm i varje fm (= 24 fm)</li>
-                    <li>V 27: *3 fm, 2 fm i nästa fm* totalt 6 ggr (= 30 fm)</li>
-                    <li>V 28 - 29: 1 fm i varje fm (= 30 fm)</li>
-                    <li>V 30: *4 fm, 2 fm i nästa fm* totalt 6 ggr (= 36 fm)</li>
-                    <li>V 31 - 47: 1 fm i varje fm (= 36 fm)</li>
-                </ul>
-                <p>Stoppa kroppen med fyllningsvadd efter hand när du nu minskar antalet maskor på varvet.</p>
-                <ul>
-                    <li>V 48: *4 fm, 2 fm tillsammans* totalt 6 ggr (= 30 fm)</li>
-                    <li>V 49: *3 fm, 2 fm tillsammans* totalt 6 ggr (= 24 fm)</li>
-                    <li>V 50: *2 fm, 2 fm tillsammans* totalt 6 ggr (= 18 fm)</li>
-                    <li>V 51: *1 fm, 2 fm tillsammans* totalt 6 ggr (= 12 fm)</li>
-                    <li>V 52: *2 fm tillsammans* totalt 6 ggr (= 6 fm)</li>
-                </ul>
-                <p>Ta av garnet med 20 cm till godo och dra igenom öglan. Stoppa i lite extra fyllningsvadd innan du drar åt.</p>
-                <h4>Öron (gör två)</h4>
-                <ul>
-                    <li>V 1: Virka 4 fm runt loopen eller i luftmaskan</li>
-                    <li>V 2: 2 fm i varje fm (= 8 fm)</li>
-                    <li>V 3: *3 fm, 2 fm i nästa fm* totalt 2 ggr (= 10 fm)</li>
-                    <li>V 4: *4 fm, 2 fm i nästa fm* totalt 2 ggr (= 12 fm)</li>
-                    <li>V 5: *5 fm, 2 fm i nästa fm* totalt 2 ggr (= 14 fm)</li>
-                </ul>
-                <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan. </p>
-                <h4>Nos</h4>
-                <ul>
-                    <li>V 1: Virka 7 fm runt loopen eller i luftmaskan </li>
-                    <li>V 2: 2 fm i varje fm (= 14 fm)</li>
-                    <li>V 3 – 10: 1 fm i varje fm (= 14 fm)</li>
-                </ul>
-                <p>Fyll nosen med lite fyllningsvadd, inte för mycket för nosen ska plattas till lite.</p>
-                <ul>
-                    <li>V 11: 3 fm tills, 4 fm tills, 4 fm tills, 3 fm tills (= 4 fm)</li>
-                </ul>
-                <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan.</p>
-                <h4>Armar (gör två)</h4>
-                <p>Vill du ha tvåfärgade armar, så börjar du med den färg du tänkt för handen/tassen.</p>
-                <ul>
-                    <li>V 1: Virka 6 fm runt loopen eller i luftmaskan</li>
-                    <li>V 2: 2 fm i varje fm (= 12 fm)</li>
-                    <li>V 3 – 6: 1 fm i varje fm (= 12 fm)</li>
-                    <li>V 7: *1 fm, 2 fm tills* totalt 4 ggr (= 8 fm)</li>
-                </ul>
-                <p>Stoppa handen med lite fyllnadsvadd och byt eventuellt färg om du tänkt en annan färg på armen.</p>
-                <ul>
-                    <li>V 8 – 28: 1 fm i varje fm (= 8 fm)</li>
-                </ul>
-                <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan.</p>
-                <h4>Ben (gör två)</h4>
-                <p>Vill du ha tvåfärgade ben, så börjar du med den färg du tänkt för foten/tassen.</p>
-                <ul>
-                    <li>V 1: Virka 6 fm runt loopen eller i luftmaskan</li>
-                    <li>V 2: 2 fm i varje fm (= 12 fm)</li>
-                    <li>V 3: *3 fm, 2 fm i nästa fm* totalt 3 ggr (= 15 fm)</li>
-                    <li>V 4 – 7: 1 fm i varje fm (= 15 fm)</li>
-                    <li>V 8: *1 fm, 2 fm tills* totalt 5 ggr (= 10 fm)</li>
-                </ul>
-                <p>Stoppa foten med lite fyllnadsvadd och byt eventuellt färg om du tänkt en annan färg på benet.</p>
-                <ul>
-                    <li>V 9 – 28: 1 fm i varje fm (= 10 fm)</li>
-                </ul>
-                <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan.</p>
-                <h4>Svans</h4>
-                <ul>
-                    <li>V 1: Virka 6 fm runt loopen eller i luftmaskan</li>
-                    <li>V 2: *2 fm, 2 fm i nästa fm* totalt 2 ggr (= 8 fm)</li>
-                </ul>
-                <p>Fortsätt med 1 fm i varje fm. Enligt mönstret ska det vara 20 varv nu, men jag tänker vara ärlig med att jag brukar bara 
-                    virka på ett tag. Du behöver inte räkna varven här, är svansen typ lika lång som benet/armen, så blir det bra.</p>
-                <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan. </p>
-                <h4>Hjärta</h4>
-                <p>Det här är ett förslag på ett hjärta, men du kan lika gärna använda ditt favoritmönster.</p>
-                <ul>
-                    <li>V 1: 2 lm, 1 fm i andra lm från nålen, 1 lm, vänd (2 fm)</li>
-                    <li>V 2: 2 fm, 2 fm i nästa fm, 1 lm, vänd (4 fm)</li>
-                    <li>V 3: *2 fm, 2 fm i nästa fm*, upprepa varvet ut, 1 lm, vänd (8 fm)</li>
-                    <li>V 4: 2 fm i första fm, 1 fm i varje fm tills sista fm, 2 fm i sista fm, 1 m, vänd (10 fm)</li>
-                    <li>V 5: 2 fm i första fm, 1 fm i varje fm tills sista fm, 2 fm i sista fm, 1 m, vänd (12 fm)</li>
-                    <li>V 6: 1 fm i varje fm (12 fm)</li>
-                </ul>
-                <p>Nu virkas en hjärthalva i taget.</p>
-                <ul>
-                    <li>V 7: 2 fm tills, 2 fm, 2 fm tills, 1 lm, vänd. (4 fm) Du virkar alltså bara hälften av fm på varvet.</li>
-                    <li>V 8: 2 fm tills, 2 fm tills, 1 lm vänd (2 fm)</li>
-                </ul>
-                <p>Ta av garnet och virka likadant på andra sidan (de 6 fm som är kvar från v 6 tidigare). Fäst trådarna och brodera ett ärr.</p>
-                <h4>Montering</h4>
-                <p>Sy fast armar, ben och svans. Fäst öronen på huvudet och nosen horisontellt på ansiktet. Nu är det upp dig hur du vill 
-                    utforma ansiktet, ta gärna inspiration av bilder på vår <a href="https://www.facebook.com/hjartekatten" target="_blank">
-                    Facebook-sida</a>. Vissa broderar ögonen direkt på ansiktet, andra virkar små ögon och syr fast. Jag kan då 
-                    rekommendera brodergarn (typ Mouline-garn) och en riktigt tunn virknål, kanske bara 1,5 mm.</p>
-                <p>Sy till sist fast hjärtat på vänster sida av bröstet, såvida inte din Hjärtekatt ska representera någon av de ca 0,08 promille 
-                    av befolkningen som har <a href="https://sv.wikipedia.org/wiki/Dextrocardia" target="_blank">Dextrocardia</a>.</p>
-                <p>Döp din Hjärtekatt och du är färdig!</p>
-                <p>Copyright of the cat-pattern is reserved by <a href="https://www.ravelry.com/designers/nekoyama" target="_blank">Nekoyama</a>, 
-                    the creator of Amineko. Copyright ©2002 Nekoyama. All rights reserved.</p>
-                <p>Länk till originalmönstret hittar du <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">här</a>.</p>
-                <p>Svensk översättning av Monica Hansen 2009.</p>
-                <p>Omarbetad version av Marleine Angshult 2012 och av Ida-Sofie Karlsson 2025.</p>
-            </div>
+            
         </section> <!--slut container virk-monster-->
         <section class="container-syskondjur"  id="syskondjur">
             <h2>När en familjemedlem blir sjuk påverkas hela familjen</h2>
@@ -340,14 +188,14 @@
             <aside class="container-mottagare-syskondjur">
                 <h3>Skicka till den mottagare som matchar din födelsemånad.</h3>
                 <h4>Januari och februari</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Sanna Åhlén</li>
                     <li>Hedeforsvägen 28a</li>
                     <li>443 61 Stenkullen</li>
                     <li>suahlen@gmail.com</li>
                 </ul>
                 <h4>Mars och april</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Ida-Sofie Karlsson</li>
                     <li>Lokvägen 20A</li>
                     <li>253 52 Påarp</li>
@@ -355,7 +203,7 @@
                     <li>070-858 36 15</li>
                 </ul>
                 <h4>Maj och juni</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Linda Randsalu</li>
                     <li>Flygelvägen 94</li>
                     <li>224 72 Lund</li>
@@ -363,14 +211,14 @@
                     <li>070-552 57 09</li>
                 </ul>
                 <h4>Juli till oktober</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Sanna Åhlén</li>
                     <li>Hedeforsvägen 28a</li>
                     <li>443 61 Stenkullen</li>
                     <li>suahlen@gmail.com</li>
                 </ul>
                 <h4>November och december</h4>
-                <ul>
+                <ul class="mottagare">
                     <li>Ulrica Persson</li>
                     <li>Vattle Byväg 69</li>
                     <li>235 94 Vellinge</li>
@@ -489,5 +337,164 @@
             <li><a href="https://www.instagram.com/hjartekatten/" target="_blank">Instagram</a></li>
         </ul>
     </footer>
+
+    <section class="container-svenskt-monster">
+        <!--svenska översättningen av mönstret-->
+        <h2 id="monster">Svensk översättning av Amineko cat</h2>
+        <p>Det här är en svensk version av mönstret <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">
+            Amineko Crocheted Cat</a>, översatt med tillåtelse från upphovsrättsinnehavaren. Till skillnad från originalmönstret har 
+            vi valt att virka huvud och kropp i en sammanhängande del, då slipper vi ett monteringsmoment senare. Lycka till!</p>
+        <h3>Du behöver:</h3>
+        <h4>Garn och virknål</h4>
+        <p>Valfritt! Passa på att använda restgarner eller handla os en av butikerna som erbjuder <a href="#">Hjärtekatten-rabatt</a>.</p>
+        <p>Välj en virknål som är lite mindre än vad garnet rekommenderar. Då blir maskorna tätare och stoppningen tittar inte ut i maskhålen. </p>
+        <p>Exakt garnåtgång varierar beroende på garn och nål.</p>
+        <h4>Mönster</h4>
+        <p>Kattmönstret <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">Amineko Crocheted Cat</a></p>
+        <p>(Copyright of the pattern is reserved by <a href="https://www.ravelry.com/designers/nekoyama" target="_blank">Nekoyama</a>, 
+            the creator of Amineko. Copyright ©2002 Nekoyama. All rights reserved.)</p>
+        <p>Till hjärtat får du använda vilket mönster du vill. I mönstret till katten, ger vi förslag på några vi gillar.</p>
+        <h4>Övrigt</h4>
+        <ul>
+            <li>Fyllnadsvadd</li>
+            <li>(eventuellt plastgranulat samt tyg/nylonstrumpa)</li>
+            <li>Nål för att sy ihop delarna samt brodera ansikte och ärr</li>
+            <li>(eventuellt en markör för att hålla reda på varven)</li>
+            <li>Lite garn för ansikte och ärr </li>
+            <li>… och kärlek förstås!</li>
+        </ul>
+        <h3>Gör så här: </h3>
+        <p>Det finns flera olika sätt att starta en amigurumi-virkning. Välj något av våra exempel eller din egen favorit. </p>
+        <h4>Loop:</h4>
+        <p>Klipp av ca 20 cm garn, forma en 3-4 cm stor ögla på mitten. Ta garnet du ska virka med och gör en ögla på 
+            nålen som vanligt. Stick in nålen i loopens mitt, när du börjar virka runt garnet i loopen kommer loopens garn att löpa som 
+            en kabel inuti maskorna du virkar. Virka runt loop-garnet och dra sedan i dess båda ändar så den dras åt och sluts till 
+            en ring.</p>
+        <h4>Två luftmaskor:</h4>
+        <p>Gör två luftmaskor och virka varv ett i den andra luftmaskan från nålen. Detta alternativ är det lättaste, dt kan dock bli 
+            ett litet hål i mitten, men det kan du enkelt sy ihop senare.</p>
+        <p>Nu kör vi!</p>
+        <h4>Huvud och kropp</h4>
+        <ul>
+            <li>V 1: Virka 6 fm runt loopen eller i luftmaskan </li>
+            <li>V 2: 2 fm i varje fm (= 12 fm)</li>
+            <li>V 3: *1 fm, 2 fm i nästa fm* totalt 6 ggr (=18 fm)</li>
+            <li>V 4: *2 fm, 2 fm i nästa fm* totalt 6 ggr (=24 fm)</li>
+            <li>V 5: *3 fm, 2 fm i nästa fm* totalt 6 ggr (=30 fm)</li>
+            <li>V 6: *4 fm, 2 fm i nästa fm* totalt 6 ggr (=36 fm)</li>
+            <li>V 7: *5 fm, 2 fm i nästa fm* totalt 6 ggr (=42 fm)</li>
+            <li>V 8: *6 fm, 2 fm i nästa fm* totalt 6 ggr (=48 fm)</li>
+            <li>V 9 – 15: 1 fm i varje fm (= 48 fm)</li>
+            <li>V 16: *6 fm, 2 fm tillsammans* totalt 6 ggr (= 42 fm)</li>
+            <li>V 17: *5 fm, 2 fm tillsammans* totalt 6 ggr (= 36 fm)</li>
+            <li>V 18: *4 fm, 2 fm tillsammans* totalt 6 ggr (= 30 fm)</li>
+            <li>V 19: *3 fm, 2 fm tillsammans* totalt 6 ggr (= 24 fm)</li>
+            <li>V 20: *2 fm, 2 fm tillsammans* totalt 6 ggr (= 18 fm)</li>
+        </ul>
+        <p>Stoppa huvudet med fyllnadsvadd och fortsätt sedan kroppen.</p>
+        <ul>
+            <li>V 21 – 23: 1 fm i varje fm (= 18 fm)</li>
+            <li>V 24: *2 fm, 2 fm i nästa fm* totalt 6 ggr (= 24 fm)</li>
+            <li>V 25 - 26: 1 fm i varje fm (= 24 fm)</li>
+            <li>V 27: *3 fm, 2 fm i nästa fm* totalt 6 ggr (= 30 fm)</li>
+            <li>V 28 - 29: 1 fm i varje fm (= 30 fm)</li>
+            <li>V 30: *4 fm, 2 fm i nästa fm* totalt 6 ggr (= 36 fm)</li>
+            <li>V 31 - 47: 1 fm i varje fm (= 36 fm)</li>
+        </ul>
+        <p>Stoppa kroppen med fyllningsvadd efter hand när du nu minskar antalet maskor på varvet.</p>
+        <ul>
+            <li>V 48: *4 fm, 2 fm tillsammans* totalt 6 ggr (= 30 fm)</li>
+            <li>V 49: *3 fm, 2 fm tillsammans* totalt 6 ggr (= 24 fm)</li>
+            <li>V 50: *2 fm, 2 fm tillsammans* totalt 6 ggr (= 18 fm)</li>
+            <li>V 51: *1 fm, 2 fm tillsammans* totalt 6 ggr (= 12 fm)</li>
+            <li>V 52: *2 fm tillsammans* totalt 6 ggr (= 6 fm)</li>
+        </ul>
+        <p>Ta av garnet med 20 cm till godo och dra igenom öglan. Stoppa i lite extra fyllningsvadd innan du drar åt.</p>
+        <h4>Öron (gör två)</h4>
+        <ul>
+            <li>V 1: Virka 4 fm runt loopen eller i luftmaskan</li>
+            <li>V 2: 2 fm i varje fm (= 8 fm)</li>
+            <li>V 3: *3 fm, 2 fm i nästa fm* totalt 2 ggr (= 10 fm)</li>
+            <li>V 4: *4 fm, 2 fm i nästa fm* totalt 2 ggr (= 12 fm)</li>
+            <li>V 5: *5 fm, 2 fm i nästa fm* totalt 2 ggr (= 14 fm)</li>
+        </ul>
+        <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan. </p>
+        <h4>Nos</h4>
+        <ul>
+            <li>V 1: Virka 7 fm runt loopen eller i luftmaskan </li>
+            <li>V 2: 2 fm i varje fm (= 14 fm)</li>
+            <li>V 3 – 10: 1 fm i varje fm (= 14 fm)</li>
+        </ul>
+        <p>Fyll nosen med lite fyllningsvadd, inte för mycket för nosen ska plattas till lite.</p>
+        <ul>
+            <li>V 11: 3 fm tills, 4 fm tills, 4 fm tills, 3 fm tills (= 4 fm)</li>
+        </ul>
+        <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan.</p>
+        <h4>Armar (gör två)</h4>
+        <p>Vill du ha tvåfärgade armar, så börjar du med den färg du tänkt för handen/tassen.</p>
+        <ul>
+            <li>V 1: Virka 6 fm runt loopen eller i luftmaskan</li>
+            <li>V 2: 2 fm i varje fm (= 12 fm)</li>
+            <li>V 3 – 6: 1 fm i varje fm (= 12 fm)</li>
+            <li>V 7: *1 fm, 2 fm tills* totalt 4 ggr (= 8 fm)</li>
+        </ul>
+        <p>Stoppa handen med lite fyllnadsvadd och byt eventuellt färg om du tänkt en annan färg på armen.</p>
+        <ul>
+            <li>V 8 – 28: 1 fm i varje fm (= 8 fm)</li>
+        </ul>
+        <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan.</p>
+        <h4>Ben (gör två)</h4>
+        <p>Vill du ha tvåfärgade ben, så börjar du med den färg du tänkt för foten/tassen.</p>
+        <ul>
+            <li>V 1: Virka 6 fm runt loopen eller i luftmaskan</li>
+            <li>V 2: 2 fm i varje fm (= 12 fm)</li>
+            <li>V 3: *3 fm, 2 fm i nästa fm* totalt 3 ggr (= 15 fm)</li>
+            <li>V 4 – 7: 1 fm i varje fm (= 15 fm)</li>
+            <li>V 8: *1 fm, 2 fm tills* totalt 5 ggr (= 10 fm)</li>
+        </ul>
+        <p>Stoppa foten med lite fyllnadsvadd och byt eventuellt färg om du tänkt en annan färg på benet.</p>
+        <ul>
+            <li>V 9 – 28: 1 fm i varje fm (= 10 fm)</li>
+        </ul>
+        <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan.</p>
+        <h4>Svans</h4>
+        <ul>
+            <li>V 1: Virka 6 fm runt loopen eller i luftmaskan</li>
+            <li>V 2: *2 fm, 2 fm i nästa fm* totalt 2 ggr (= 8 fm)</li>
+        </ul>
+        <p>Fortsätt med 1 fm i varje fm. Enligt mönstret ska det vara 20 varv nu, men jag tänker vara ärlig med att jag brukar bara 
+            virka på ett tag. Du behöver inte räkna varven här, är svansen typ lika lång som benet/armen, så blir det bra.</p>
+        <p>Ta av garnet med 30 – 40 cm tillgodo och dra igenom öglan. </p>
+        <h4>Hjärta</h4>
+        <p>Det här är ett förslag på ett hjärta, men du kan lika gärna använda ditt favoritmönster.</p>
+        <ul>
+            <li>V 1: 2 lm, 1 fm i andra lm från nålen, 1 lm, vänd (2 fm)</li>
+            <li>V 2: 2 fm, 2 fm i nästa fm, 1 lm, vänd (4 fm)</li>
+            <li>V 3: *2 fm, 2 fm i nästa fm*, upprepa varvet ut, 1 lm, vänd (8 fm)</li>
+            <li>V 4: 2 fm i första fm, 1 fm i varje fm tills sista fm, 2 fm i sista fm, 1 m, vänd (10 fm)</li>
+            <li>V 5: 2 fm i första fm, 1 fm i varje fm tills sista fm, 2 fm i sista fm, 1 m, vänd (12 fm)</li>
+            <li>V 6: 1 fm i varje fm (12 fm)</li>
+        </ul>
+        <p>Nu virkas en hjärthalva i taget.</p>
+        <ul>
+            <li>V 7: 2 fm tills, 2 fm, 2 fm tills, 1 lm, vänd. (4 fm) Du virkar alltså bara hälften av fm på varvet.</li>
+            <li>V 8: 2 fm tills, 2 fm tills, 1 lm vänd (2 fm)</li>
+        </ul>
+        <p>Ta av garnet och virka likadant på andra sidan (de 6 fm som är kvar från v 6 tidigare). Fäst trådarna och brodera ett ärr.</p>
+        <h4>Montering</h4>
+        <p>Sy fast armar, ben och svans. Fäst öronen på huvudet och nosen horisontellt på ansiktet. Nu är det upp dig hur du vill 
+            utforma ansiktet, ta gärna inspiration av bilder på vår <a href="https://www.facebook.com/hjartekatten" target="_blank">
+            Facebook-sida</a>. Vissa broderar ögonen direkt på ansiktet, andra virkar små ögon och syr fast. Jag kan då 
+            rekommendera brodergarn (typ Mouline-garn) och en riktigt tunn virknål, kanske bara 1,5 mm.</p>
+        <p>Sy till sist fast hjärtat på vänster sida av bröstet, såvida inte din Hjärtekatt ska representera någon av de ca 0,08 promille 
+            av befolkningen som har <a href="https://sv.wikipedia.org/wiki/Dextrocardia" target="_blank">Dextrocardia</a>.</p>
+        <p>Döp din Hjärtekatt och du är färdig!</p>
+        <p>Copyright of the cat-pattern is reserved by <a href="https://www.ravelry.com/designers/nekoyama" target="_blank">Nekoyama</a>, 
+            the creator of Amineko. Copyright ©2002 Nekoyama. All rights reserved.</p>
+        <p>Länk till originalmönstret hittar du <a href="https://www.ravelry.com/patterns/library/amineko-crocheted-cat" target="_blank">här</a>.</p>
+        <p>Svensk översättning av Monica Hansen 2009.</p>
+        <p>Omarbetad version av Marleine Angshult 2012 och av Ida-Sofie Karlsson 2025.</p>
+    </section>
+
 </body>
 </html>

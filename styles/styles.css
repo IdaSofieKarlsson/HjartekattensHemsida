@@ -1,5 +1,26 @@
+/*Färger
+den turkosa     #21BFBF
+(ljusare, gråton turkos  #89c3c4)
+gråbeige, cirkeln   #BDBFB0
+hjärterött  #D91A3D
+
+ljusare turkos  #b7e7ea
+
+ljuslljusblå    #DAE9EC
+banner-gulbrun  #AA970A
+
+bidraga
+hjärte  #EAE5C2     #D4CA82
+syskon  #D1DBDD     #A1B7BA
+rabatt  #D1D4DD     #A2A7BB
+budskap #D2E5E8     #A6CBD1
+
+ljusgrå bakgrund    #F2F2F2
+*/
+
+
 body {
-    background-color: lightgreen;
+    background-color: white;
 }
 /*
 Fonter
@@ -18,4 +39,109 @@ span {
     font-family: "Indie Flower", cursive;   /*finns endast som regular 400*/
     font-weight: 400;
     font-style: normal;
+}
+
+.header {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.antal-insamlade-hjartekatter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-logo {
+
+    margin-top: 25px;
+}
+.nav-ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-large-img {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.container-large-text {
+    max-width: 550px;
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+}
+
+.container-home {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.container-intro {
+    max-width: 550px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container-direct-pattern {
+    max-width: 450px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-bidra {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.container-cards {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    display: flex;
+}
+.container-card {
+    max-width: 250px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+}
+
+.container-virkmonster {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.mottagare {
+
 }
