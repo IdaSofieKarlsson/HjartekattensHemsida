@@ -143,14 +143,64 @@ span {
     text-align: justify;
     
 }
+
 .container-virkmonster {
     max-width: 1100px;
+    width: 100%;
+    min-height: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+.container-instruktioner {
+    max-width: 1000px;
     width: 100%;
     min-height: 400px;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin: auto;
+}
+.container-gor-sa-har {
+    max-width: 1000px;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+.container-mottagare-hjartekatter {
+    max-width: 1000px;
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+.container-mottagare-hjartekatter h3 {
+    text-align: center;
+}
+.mottagare-div, .butiker-div {
+    max-width: 1000px;
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.mottagare, .butiker {
+    max-width: 200px;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
 }
 
 .container-syskondjur {
@@ -192,6 +242,9 @@ span {
 .container-butiker-med-rabatt p {
     text-align: justify;
 }
+
+
+
 .container-sprid-budskapet {
     max-width: 1100px;
     width: 100%;
@@ -204,4 +257,31 @@ span {
 }
 .container-sprid-budskapet p {
     text-align: justify;
+}
+
+.footer {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.footer h3 {
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-svenskt-monster {
+    max-width: 1100px;
+    width: 100%;
+    min-height: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
 }
