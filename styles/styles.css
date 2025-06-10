@@ -9,13 +9,21 @@ ljusare turkos  #b7e7ea
 ljuslljusblå    #DAE9EC
 banner-gulbrun  #AA970A
 
-bidraga
-hjärte  #EAE5C2     #D4CA82
-syskon  #D1DBDD     #A1B7BA
-rabatt  #D1D4DD     #A2A7BB
-budskap #D2E5E8     #A6CBD1
-
 ljusgrå bakgrund    #F2F2F2
+
+Färger från https://www.canva.com/colors/color-palettes/rosettes-and-cream/  
+Hot Pink
+#ef7c8e
+
+Cream
+#fae8e0
+
+Spearmint
+#b6e2d3
+
+Rosewater
+#d8a7b1
+
 */
 
 
@@ -35,10 +43,23 @@ h1, h2, h3, h4 {
 p, li, figcaption {
     font-family: "Quicksand", sans-serif;
 }
+ul {
+    list-style: none;
+}
 span {
     font-family: "Indie Flower", cursive;   /*finns endast som regular 400*/
     font-weight: 400;
     font-style: normal;
+}
+a {
+    color: black;
+    
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    font-weight: bold;
 }
 
 .header {
@@ -47,7 +68,7 @@ span {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #b6e2d3;
 }
 .antal-insamlade-hjartekatter {
     display: flex;
@@ -110,18 +131,20 @@ span {
 .container-bidra {
     max-width: 1100px;
     width: 100%;
-    min-height: 600px;
+    min-height: 400px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: auto;
+    background-color: #fae8e0;
+    border-radius: 25px;
 }
 .container-cards {
     max-width: 1100px;
     width: 100%;
-    min-height: 500px;
+    min-height: 350px;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -129,19 +152,32 @@ span {
 .container-card {
     max-width: 200px;
     width: 100%;
-    min-height: 400px;
+    min-height: 325px;
     height: 100%;
-    border: black solid 3px;
+    border: #8f5b66 solid 3px;
+    border-radius: 15px;
 }
 .container-card h3 {
     text-align: center;
 }
 .container-card p {
     margin: 10px;
+    
 }
 .bidra-description {
-    text-align: justify;
-    
+    text-align: justify;   
+}
+.gor-hjartekatter {
+    background-color: #ef7c8e;
+}
+.gor-syskondjur {
+    background-color: #D8A7B1;
+}
+.ge-rabatter {
+    background-color: #ef7c8e;
+}
+.sprid-budskapet {
+    background-color: #D8A7B1;
 }
 
 .container-virkmonster {
@@ -196,11 +232,24 @@ span {
     margin: auto;
     justify-content: space-around;
 }
-.mottagare, .butiker {
-    max-width: 200px;
+.mottagare {
+    max-width: 300px;
     width: 100%;
     min-height: 200px;
     height: 100%;
+    border: #a64755 solid 5px;
+    border-radius: 10px;
+    background-color: #FAE8E0;
+    
+}
+.butiker {
+    max-width: 200px;
+    width: 100%;
+    min-height: 150px;
+    height: 100%;
+    border: #8f5b66 solid 5px;
+    border-radius: 10px;
+    background-color: #B6E2D3;
 }
 
 .container-syskondjur {
@@ -265,7 +314,8 @@ span {
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #b6e2d3;
+
 }
 .footer h3 {
     text-align: center;
