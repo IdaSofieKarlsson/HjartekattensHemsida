@@ -1,55 +1,62 @@
 /*Färger
-den turkosa     #21BFBF
-(ljusare, gråton turkos  #89c3c4)
-gråbeige, cirkeln   #BDBFB0
-hjärterött  #D91A3D
-
-ljusare turkos  #b7e7ea
-
-ljuslljusblå    #DAE9EC
-banner-gulbrun  #AA970A
-
-ljusgrå bakgrund    #F2F2F2
-
 Färger från https://www.canva.com/colors/color-palettes/rosettes-and-cream/  
-Hot Pink
-#ef7c8e
-
-Cream
-#fae8e0
-
-Spearmint
-#b6e2d3
-
-Rosewater
-#d8a7b1
-
+Hot Pink    #ef7c8e
+Cream       #fae8e0
+Spearmint   #b6e2d3
+Rosewater   #d8a7b1
 */
-
-
 body {
     background-color: white;
 }
-/*
-Fonter
-quicksand - p
-outfit - h1, h2, h3, h4
 
-
-*/
 h1, h2, h3, h4 {
     font-family: "Outfit", sans-serif;
 }
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+}
+h3 {
+    font-weight: 26px;
+    font-weight: 700;
+    line-height: 36px;
+}
+h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+}
 p, li, figcaption {
     font-family: "Quicksand", sans-serif;
+}
+li {
+    margin-bottom: 10px;
+}
+p, li, figcaption {
+    font-size: 18px;
+    line-height: 26px;
 }
 ul {
     list-style: none;
 }
 span {
     font-family: "Indie Flower", cursive;   /*finns endast som regular 400*/
+    font-size: 28px;
     font-weight: 400;
-    font-style: normal;
+    line-height: 39px;
+}
+.lilly {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    font-family: "Quicksand", sans-serif;
+    color: #8f5b66;
 }
 a {
     color: black;
@@ -117,7 +124,9 @@ a:active {
     min-height: 700px;
     height: 100%;
 }
-
+.container-large-text p {
+    text-align: justify;
+}
 .container-home {
     max-width: 1100px;
     width: 100%;
@@ -255,6 +264,7 @@ a:active {
     width: 100%;
     min-height: 200px;
     height: 100%;
+    margin: 25px;
     border: #a64755 solid 5px;
     border-radius: 10px;
     background-color: #FAE8E0;
@@ -265,6 +275,7 @@ a:active {
     width: 100%;
     min-height: 150px;
     height: 100%;
+    margin: 25px;
     border: #8f5b66 solid 5px;
     border-radius: 10px;
     background-color: #daeff0;
